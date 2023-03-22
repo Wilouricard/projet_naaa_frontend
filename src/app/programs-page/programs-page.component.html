@@ -1,2 +1,18 @@
-<p>programs-page works!</p>
-<app-navbar></app-navbar>
+<div class="pb-10">
+    <app-navbar></app-navbar>
+    <app-user-status></app-user-status>
+    <app-search-bar></app-search-bar>
+
+    <div class="my-4">
+        <h3 class="font-bold text-lg tracking-widest uppercase text-center text-white pt-5">Programmes populaires
+        </h3>
+        <div class="flex overflow-x-auto flex-nowrap">
+            <ng-container *ngFor="let program of programs">
+                <app-programs [programs]="program" class="min-w-[350px]"></app-programs>
+            </ng-container>
+        </div>
+    </div>
+
+
+
+</div>

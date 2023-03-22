@@ -13,6 +13,11 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ProgramsPageComponent } from './programs-page/programs-page.component';
 import { LeaderboardsPageComponent } from './leaderboards-page/leaderboards-page.component';
 import { UserProfilPageComponent } from './user-profil-page/user-profil-page.component';
+import { SectionComponent } from './home-page/section/section.component';
+import { HelloUserComponent } from './home-page/hello-user/hello-user.component';
+import { UserStatusComponent } from './home-page/user-status/user-status.component';
+import { ProgramsComponent } from './programs-page/programs/programs.component';
+import { SearchBarComponent } from './programs-page/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { UserProfilPageComponent } from './user-profil-page/user-profil-page.com
     HomePageComponent,
     ProgramsPageComponent,
     LeaderboardsPageComponent,
-    UserProfilPageComponent
+    UserProfilPageComponent,
+    SectionComponent,
+    HelloUserComponent,
+    UserStatusComponent,
+    ProgramsComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
