@@ -8,6 +8,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ProgramsPageComponent } from './programs-page/programs-page.component';
 import { LeaderboardsPageComponent } from './leaderboards-page/leaderboards-page.component';
 import { UserProfilPageComponent } from './user-profil-page/user-profil-page.component';
+import { ExerciseEditorComponent } from './exercise-editor/exercise-editor.component';
+import { UserProfileEditorComponent } from './user-profil-page/user-profile-editor/user-profile-editor.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'programs-page', component: ProgramsPageComponent },
   { path: 'leaderboards-page', component: LeaderboardsPageComponent },
   { path: 'user-profil-page', component: UserProfilPageComponent },
+  { path: 'app-exercise-editor', component: ExerciseEditorComponent},
+  { path: 'app-user-profile-editor', component: UserProfileEditorComponent}
 ];
 
 @NgModule({

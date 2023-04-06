@@ -11,6 +11,7 @@ export class InscriptionComponent implements OnInit {
 
   inscriptionForm!: FormGroup;
   submitted = false;
+required: any;
 
   constructor(private formBuilder: FormBuilder) { }
 

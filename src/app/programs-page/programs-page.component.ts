@@ -7,9 +7,13 @@ import { Program } from '../models/programs.model';
   styleUrls: ['./programs-page.component.scss']
 })
 export class ProgramsPageComponent implements OnInit {
-  
+
   ngOnInit(): void {
-    this.programs.sort((a, b) => b.finishedChallengers - a.finishedChallengers);
+    let sortedPrograms = this.programs.sort((a, b) => b.finishedChallengers - a.finishedChallengers);
+  }
+  
+  getFavoritePrograms(programs: Program[]): Program[] {
+    return programs.filter(program => program.isFavorite).concat(programs.filter(program => !program.isFavorite));
   }
 
   programs: Program[] = [
@@ -19,7 +23,8 @@ export class ProgramsPageComponent implements OnInit {
       'La coureuse du dimanche',
       '/assets/images/jogg.jpg',
       258,
-      4039
+      4039,
+      false
     ),
     new Program(
       'Yoga des chiens',
@@ -27,7 +32,8 @@ export class ProgramsPageComponent implements OnInit {
       'Snoop Dog',
       '/assets/images/newprog.jpg',
       124,
-      2015
+      2015,
+      true
     ),
     new Program(
       'Musculation en Pyjama',
@@ -35,7 +41,8 @@ export class ProgramsPageComponent implements OnInit {
       'Pyjaman',
       '/assets/images/home.jpg',
       173,
-      3152
+      3152,
+      false
     ),
     new Program(
       'Classique Push Pull Leg',
@@ -43,7 +50,8 @@ export class ProgramsPageComponent implements OnInit {
       'Le Gym Bro',
       '/assets/images/ppl.jpg',
       130,
-      2128
+      2128,
+      false
     ),
     new Program(
       'Avec ma gosse',
@@ -51,7 +59,8 @@ export class ProgramsPageComponent implements OnInit {
       'Super parent',
       '/assets/images/avis.jpg',
       179,
-      2876
+      2876, 
+      true
     ),
     new Program(
       'Programme de yoga',
@@ -59,7 +68,8 @@ export class ProgramsPageComponent implements OnInit {
       'Shi Fu',
       '/assets/images/namaste.jpg',
       76,
-      986
+      986,
+      true
     )
 ];
 

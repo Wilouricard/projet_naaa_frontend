@@ -5,7 +5,8 @@ export class Program {
       public rewardTitle: string,
       public imageSrc: string,
       public participants: number,
-      public finishedChallengers: number
+      public finishedChallengers: number,
+      public isFavorite: boolean
     ) {}
 }
 
