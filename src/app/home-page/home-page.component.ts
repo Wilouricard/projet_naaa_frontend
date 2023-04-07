@@ -7,6 +7,7 @@ import { Section } from '../models/section.model';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
+  
   food!: Section;
   challenge!: Section;
   news!: Section;
